@@ -1,57 +1,43 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<test-run id="2" testcasecount="4" result="Failed" total="4" passed="0" failed="0" inconclusive="0" skipped="0" asserts="0" start-time="2016-05-05 14:09:20Z" end-time="2016-05-05 14:12:08Z" duration="167.971420">
-  <environment nunit-version="3.0.5715.30860" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.3.9600.0" platform="Win32NT" cwd="C:\Users\Chris Gungaloo\Documents\Visual Studio 2015\Projects\Twitter_Test" machine-name="QAWORKS-000208" user="Chris Gungaloo" user-domain="QAWorks-000208" culture="en-GB" uiculture="en-GB" os-architecture="x64" />
-  <test-suite type="Assembly" id="1-1" name="labels" fullname="C:\Program Files\Git\labels" testcasecount="0" runstate="NotRunnable" result="Failed" label="Invalid">
-    <properties>
-      <property name="_SKIPREASON" value="File not found: C:\Program Files\Git\labels" />
-    </properties>
-    <reason>
-      <message>File not found: C:\Program Files\Git\labels</message>
-    </reason>
-  </test-suite>
-  <test-suite type="Assembly" id="1-1006" name="C:\Users\Chris Gungaloo\Documents\Visual Studio 2015\Projects\Twitter_Test\Twitter_Test\bin\Debug\Twitter_Test.dll" fullname="C:\Users\Chris Gungaloo\Documents\Visual Studio 2015\Projects\Twitter_Test\Twitter_Test\bin\Debug\Twitter_Test.dll" runstate="Runnable" testcasecount="4" result="Passed" duration="167.770806" total="4" passed="0" failed="0" inconclusive="0" skipped="0" asserts="0">
-    <properties>
-      <property name="_PID" value="2076" />
-      <property name="_APPDOMAIN" value="test-domain-Twitter_Test.dll" />
-    </properties>
-    <test-suite type="Namespace" id="1-1007" name="Twitter_Test" fullname="Twitter_Test" runstate="Runnable" testcasecount="4" result="Passed" duration="167.748819" total="4" passed="0" failed="0" inconclusive="0" skipped="0" asserts="0">
-      <test-suite type="Namespace" id="1-1008" name="FeatureFiles" fullname="Twitter_Test.FeatureFiles" runstate="Runnable" testcasecount="4" result="Passed" duration="167.748013" total="4" passed="0" failed="0" inconclusive="0" skipped="0" asserts="0">
-        <test-suite type="TestFixture" id="1-1000" name="LoginFeature" fullname="Twitter_Test.FeatureFiles.LoginFeature" runstate="Runnable" testcasecount="2" result="Passed" duration="96.463020" total="2" passed="0" failed="0" inconclusive="0" skipped="0" asserts="0">
-          <properties>
-            <property name="_DESCRIPTION" value="Login" />
-          </properties>
-          <test-case id="1-1001" name="IncorrectLogin" fullname="Twitter_Test.FeatureFiles.LoginFeature.IncorrectLogin" runstate="Runnable" result="Passed" duration="49.142056" asserts="2">
-            <properties>
-              <property name="_DESCRIPTION" value="Incorrect Login" />
-              <property name="_CATEGORIES" value="loginScreen" />
-            </properties>
-          </test-case>
-          <test-case id="1-1002" name="Login" fullname="Twitter_Test.FeatureFiles.LoginFeature.Login" runstate="Runnable" result="Passed" duration="45.978091" asserts="2">
-            <properties>
-              <property name="_DESCRIPTION" value="Login" />
-              <property name="_CATEGORIES" value="loginScreen" />
-              <property name="_CATEGORIES" value="logout" />
-            </properties>
-          </test-case>
-        </test-suite>
-        <test-suite type="TestFixture" id="1-1003" name="TweetTextFeature" fullname="Twitter_Test.FeatureFiles.TweetTextFeature" runstate="Runnable" testcasecount="2" result="Passed" duration="71.276004" total="2" passed="0" failed="0" inconclusive="0" skipped="0" asserts="0">
-          <properties>
-            <property name="_DESCRIPTION" value="TweetText" />
-            <property name="_CATEGORIES" value="BeforeTweet" />
-            <property name="_CATEGORIES" value="AfterTweet" />
-          </properties>
-          <test-case id="1-1005" name="SendASecondTweet" fullname="Twitter_Test.FeatureFiles.TweetTextFeature.SendASecondTweet" runstate="Runnable" result="Passed" duration="10.994032" asserts="1">
-            <properties>
-              <property name="_DESCRIPTION" value="Send a Second Tweet" />
-            </properties>
-          </test-case>
-          <test-case id="1-1004" name="SendATweet" fullname="Twitter_Test.FeatureFiles.TweetTextFeature.SendATweet" runstate="Runnable" result="Passed" duration="8.933971" asserts="1">
-            <properties>
-              <property name="_DESCRIPTION" value="Send a Tweet" />
-            </properties>
-          </test-case>
-        </test-suite>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Chris Gungaloo\Documents\Visual Studio 2015\Projects\Twitter_Test\Twitter_Test\bin\Debug\Twitter_Test.dll" total="3" errors="0" failures="0" not-run="1" inconclusive="0" ignored="1" skipped="0" invalid="0" date="2016-05-06" time="17:09:16">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8689" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\Chris Gungaloo\Documents\Visual Studio 2015\Projects\Twitter_Test" machine-name="QAWORKS-000208" user="Chris Gungaloo" user-domain="QAWorks-000208" />
+  <culture-info current-culture="en-GB" current-uiculture="en-GB" />
+  <test-suite type="Assembly" name="C:\Users\Chris Gungaloo\Documents\Visual Studio 2015\Projects\Twitter_Test\Twitter_Test\bin\Debug\Twitter_Test.dll" executed="True" result="Success" success="True" time="106.674" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Twitter_Test" executed="True" result="Success" success="True" time="106.654" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="FeatureFiles" executed="True" result="Success" success="True" time="106.652" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="LoginFeature" description="Login" executed="True" result="Success" success="True" time="47.563" asserts="0">
+                <results>
+                  <test-case name="Twitter_Test.FeatureFiles.LoginFeature.IncorrectLogin" description="Incorrect Login" executed="False" result="Ignored">
+                    <reason>
+                      <message><![CDATA[Ignored scenario]]></message>
+                    </reason>
+                  </test-case>
+                  <test-case name="Twitter_Test.FeatureFiles.LoginFeature.Login" description="Login" executed="True" result="Success" success="True" time="46.551" asserts="2">
+                    <categories>
+                      <category name="loginScreen" />
+                      <category name="logout" />
+                    </categories>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="TweetTextFeature" description="TweetText" executed="True" result="Success" success="True" time="58.930" asserts="0">
+                <categories>
+                  <category name="BeforeTweet" />
+                  <category name="AfterTweet" />
+                </categories>
+                <results>
+                  <test-case name="Twitter_Test.FeatureFiles.TweetTextFeature.SendFirstTweet" description="Send First Tweet" executed="True" result="Success" success="True" time="9.278" asserts="1" />
+                  <test-case name="Twitter_Test.FeatureFiles.TweetTextFeature.SendSecondTweet" description="Send Second Tweet" executed="True" result="Success" success="True" time="8.133" asserts="1" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
       </test-suite>
-    </test-suite>
+    </results>
   </test-suite>
-</test-run>
+</test-results>
