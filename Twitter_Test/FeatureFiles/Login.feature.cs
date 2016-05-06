@@ -65,11 +65,11 @@ namespace Twitter_Test.FeatureFiles
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Incorrect Login")]
-        [NUnit.Framework.CategoryAttribute("loginScreen")]
+        [NUnit.Framework.IgnoreAttribute("Ignored scenario")]
         public virtual void IncorrectLogin()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Incorrect Login", new string[] {
-                        "loginScreen"});
+                        "ignore"});
 #line 4
 this.ScenarioSetup(scenarioInfo);
 #line 5

@@ -37,10 +37,19 @@ namespace Twitter_Test
         {
             string username;
             string password;
-            if (ScenarioContext.Current.ScenarioInfo.Title.Equals("Incorrect Login"))
+            Console.WriteLine("Context is " +FeatureContext.Current.FeatureInfo.Title);
+            if (FeatureContext.Current.FeatureInfo.Title.Equals("Login"))
             {
-                username = "username";
-                password = "password";
+                if(ScenarioContext.Current.ScenarioInfo.Title.Equals("Incorrect Login"))
+                {
+                    username = "username";
+                    password = "password";
+                }else
+                {
+                    CredentialsManager.getCredentials();
+                    username = CredentialsManager.username;
+                    password = CredentialsManager.password;
+                }
             }else
             {
                 CredentialsManager.getCredentials();

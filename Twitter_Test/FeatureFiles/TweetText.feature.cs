@@ -69,10 +69,10 @@ namespace Twitter_Test.FeatureFiles
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Send a Tweet")]
-        public virtual void SendATweet()
+        [NUnit.Framework.DescriptionAttribute("Send First Tweet")]
+        public virtual void SendFirstTweet()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Send a Tweet", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Send First Tweet", ((string[])(null)));
 #line 7
 this.ScenarioSetup(scenarioInfo);
 #line 8
@@ -84,10 +84,10 @@ this.ScenarioSetup(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Send a Second Tweet")]
-        public virtual void SendASecondTweet()
+        [NUnit.Framework.DescriptionAttribute("Send Second Tweet")]
+        public virtual void SendSecondTweet()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Send a Second Tweet", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Send Second Tweet", ((string[])(null)));
 #line 11
 this.ScenarioSetup(scenarioInfo);
 #line 12
