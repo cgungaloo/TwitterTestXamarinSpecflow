@@ -18,20 +18,25 @@ namespace Twitter_Test.FeatureFiles
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Login")]
-    public partial class LoginFeature
+    [NUnit.Framework.DescriptionAttribute("TweetImage")]
+    [NUnit.Framework.CategoryAttribute("BeforeTweet")]
+    [NUnit.Framework.CategoryAttribute("AfterTweet")]
+    public partial class TweetImageFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "Login.feature"
+#line 1 "TweetImage.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Login", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "TweetImage", "\tIn order to give QAWorks an online presence on twitter\r\n\tI want to tweet an imag" +
+                    "e", ProgrammingLanguage.CSharp, new string[] {
+                        "BeforeTweet",
+                        "AfterTweet"});
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -64,41 +69,20 @@ namespace Twitter_Test.FeatureFiles
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Incorrect Login")]
-        [NUnit.Framework.CategoryAttribute("loginScreen")]
-        public virtual void IncorrectLogin()
+        [NUnit.Framework.DescriptionAttribute("Tweet Image")]
+        [NUnit.Framework.CategoryAttribute("mytag")]
+        public virtual void TweetImage()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Incorrect Login", new string[] {
-                        "loginScreen"});
-#line 4
-this.ScenarioSetup(scenarioInfo);
-#line 5
- testRunner.Given("I am on the login screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 6
- testRunner.When("I login with an incorrect username and password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Tweet Image", new string[] {
+                        "mytag"});
 #line 7
- testRunner.Then("an error message will come up", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Login")]
-        [NUnit.Framework.CategoryAttribute("loginScreen")]
-        [NUnit.Framework.CategoryAttribute("logout")]
-        public virtual void Login()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login", new string[] {
-                        "loginScreen",
-                        "logout"});
-#line 10
 this.ScenarioSetup(scenarioInfo);
-#line 11
- testRunner.Given("I am on the login screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 12
- testRunner.When("I login with correctusername and password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 13
- testRunner.Then("I will be on the twitter homescreen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 8
+ testRunner.Given("I have an image on my phone", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 9
+ testRunner.When("I tweet the image with text \"Test image QAWorks \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 10
+ testRunner.Then("I should see the image tweeted in my profile", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

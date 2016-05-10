@@ -27,5 +27,10 @@ namespace Twitter_Test
         {
             return false;
         }
+
+        public ITasks tweetImage(string tweetText)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

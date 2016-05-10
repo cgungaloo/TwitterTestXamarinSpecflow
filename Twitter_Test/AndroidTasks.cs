@@ -84,10 +84,5 @@ namespace Twitter_Test
             app.Tap(c => c.Id("composer_post").Text("Tweet"));
             return this;
         }
-
-        public ITasks tweetWithImage(string message, string imgpath)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

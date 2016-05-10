@@ -11,10 +11,9 @@ namespace Twitter_Test
         ITasks login();
         ITasks tapLogin();
         ITasks tweet(string message);
-        ITasks tweetWithImage(string message,string imgpath);
-
         ITasks logOut();
         ITasks tapDontAllow();
+        ITasks tweetImage(string tweetText);
         bool hasItem(string item);
         bool hasID(string buttonName);
         bool hasTweet(string tweet);

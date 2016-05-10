@@ -34,10 +34,6 @@ namespace Twitter_Test
             throw new NotImplementedException();
         }
 
-        public void tweetWithImage(string message, string imgpath)
-        {
-            throw new NotImplementedException();
-        }
 
         ITasks ITasks.login()
         {
@@ -49,9 +45,5 @@ namespace Twitter_Test
             throw new NotImplementedException();
         }
 
-        ITasks ITasks.tweetWithImage(string message, string imgpath)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

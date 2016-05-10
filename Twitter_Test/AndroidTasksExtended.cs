@@ -9,13 +9,13 @@ namespace Twitter_Test
 {
     public partial class AndroidTasks: ITasks
     {
+        public static string fullTweetImage;
         public ITasks logOut()
         {
             app.Tap(c => c.Id("overflow").Marked("More"));
             app.Tap(c => c.Text("Settings"));
             app.Tap(c => c.Text("Sign out"));
             app.Tap(c => c.Id("button1").Text("OK"));
-            //app.Repl();
             return this;
         }
 
@@ -51,6 +51,17 @@ namespace Twitter_Test
             {
                 return false;
             }
+        }
+
+        public ITasks tweetImage(string tweetText)
+        {
+
+            fullTweetImage = tweetText + NumberManager.getNewNum().ToString();
+            app.Tap(c => c.Id("composer_photos"));
+            app.Tap(c => c.Id("gallery_image_image").Index(0));
+            app.EnterText(c => c.Id("tweet_box"), fullTweetImage);
+            app.Tap(c => c.Id("composer_post").Text("Tweet"));
+            return this;
         }
     }
 }

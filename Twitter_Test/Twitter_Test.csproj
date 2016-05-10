@@ -72,6 +72,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Login.feature</DependentUpon>
     </Compile>
+    <Compile Include="FeatureFiles\TweetImage.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TweetImage.feature</DependentUpon>
+    </Compile>
     <Compile Include="FeatureFiles\TweetText.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -84,6 +89,7 @@
     <Compile Include="StepDefs\IncorrectLogin.cs" />
     <Compile Include="StepDefs\LoginSteps.cs" />
     <Compile Include="AppInitializer.cs" />
+    <Compile Include="StepDefs\TweetImageSteps.cs" />
     <Compile Include="StepDefs\TweetTextSteps.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +97,10 @@
     <None Include="FeatureFiles\Login.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Login.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureFiles\TweetImage.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TweetImage.feature.cs</LastGenOutput>
     </None>
     <None Include="FeatureFiles\TweetText.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

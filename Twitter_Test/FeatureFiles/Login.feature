@@ -1,6 +1,6 @@
 ﻿Feature: Login
 
-@ignore
+@loginScreen
 Scenario:Incorrect Login
 	Given I am on the login screen
 	When I login with an incorrect username and password
