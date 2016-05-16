@@ -8,7 +8,9 @@ namespace Twitter_Test.StepDefs
     public class TweetImageSteps
     {
         ITasks app;
-
+        //---------------------------------------------------------------------------------------------------------
+        //**** Warning, This test will attempt to tweet the first image on your phones image gallery!!!!!*******
+        //----------------------------------------------------------------------------------------------------------
         [Given(@"I have an image on my phone")]
         public void GivenIHaveAnImageOnMyPhone()
         {
