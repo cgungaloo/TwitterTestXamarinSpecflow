@@ -9,7 +9,7 @@ using TechTalk.SpecFlow;
 namespace Twitter_Test.StepDefs
 {
     [Binding]
-    class IncorrectLogin
+    public class IncorrectLogin
     {
         ITasks app = BeforeAfterHook.task;
 

@@ -9,6 +9,7 @@ namespace Twitter_Test
 {
     public partial class AndroidTasks: ITasks
     {
+        //MS Naming conventions
         public static string fullTweetImage;
         public ITasks logOut()
         {

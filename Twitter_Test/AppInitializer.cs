@@ -14,6 +14,7 @@ namespace Twitter_Test
             {
                 return new AndroidTasks(ConfigureApp
                     .Android
+                    //Enter path tpo APK
                     .ApkFile("C:\\Users\\Chris Gungaloo\\Documents\\Visual Studio 2015\\Projects\\Twitter_Test\\Twitter_Test\\Assets\\Android\\Twitter_v5.106.0_apkpure.com.apk")
                     .EnableLocalScreenshots()
                     .StartApp());

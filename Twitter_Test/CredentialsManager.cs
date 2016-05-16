@@ -15,6 +15,7 @@ namespace Twitter_Test
 
         public static void getCredentials()
         {
+            //Enter path to Json Login credentials
             string path = "C:\\Users\\Chris Gungaloo\\Documents\\TwitterLoginCredentials.json";
             JObject jo = JObject.Parse(File.ReadAllText(path));
 
