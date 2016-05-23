@@ -32,5 +32,17 @@ namespace Twitter_Test
         {
             throw new NotImplementedException();
         }
+
+        public ITasks scrollDown()
+        {
+            app.ScrollDown();
+            return this;
+        }
+
+        public ITasks scrollUp()
+        {
+            app.ScrollUp();
+            return this;
+        }
     }
 }

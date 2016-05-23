@@ -25,7 +25,7 @@ namespace Twitter_Test
         {
             try
             {
-                app.WaitForElement(c => c.Marked(item),"Could not find item", new TimeSpan(0,0,5));
+                app.WaitForElement(c => c.Marked(item),"Could not find item", new TimeSpan(0,0,7));
                 return true;
             }catch(Exception e)
             {

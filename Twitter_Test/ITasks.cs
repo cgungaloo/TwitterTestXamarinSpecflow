@@ -17,5 +17,7 @@ namespace Twitter_Test
         bool hasItem(string item);
         bool hasID(string buttonName);
         bool hasTweet(string tweet);
+        ITasks scrollDown();
+        ITasks scrollUp();
     }
 }

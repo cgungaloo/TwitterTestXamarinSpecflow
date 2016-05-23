@@ -64,5 +64,18 @@ namespace Twitter_Test
             app.Tap(c => c.Id("composer_post").Text("Tweet"));
             return this;
         }
+
+        public ITasks scrollDown()
+        {
+            app.ScrollDown();
+            return this;
+        }
+
+        public ITasks scrollUp()
+        {
+            app.ScrollUp();
+            return this;
+        }
+
     }
 }
