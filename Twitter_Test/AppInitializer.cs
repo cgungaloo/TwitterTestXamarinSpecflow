@@ -8,25 +8,25 @@ namespace Twitter_Test
 {
     public class AppInitializer
     {
-        public static ITasks StartApp(Platform platform)
+        public static IApp StartApp(Platform platform)
         {
             if (platform == Platform.Android)
             {
-                return new AndroidTasks(ConfigureApp
+                return ConfigureApp
                     .Android
                     //Enter path tpo APK
                     .ApkFile("C:\\Users\\Chris Gungaloo\\Documents\\Visual Studio 2015\\Projects\\Twitter_Test\\Twitter_Test\\Assets\\Android\\Twitter_v5.106.0_apkpure.com.apk")
                     .EnableLocalScreenshots()
-                    .StartApp());
+                    .StartApp();
             }
             else
             {
 
-                return new IOSTasks(ConfigureApp
+                return ConfigureApp
                     .iOS
                     .AppBundle("C:\\Users\\Chris Gungaloo\\Documents\\Visual Studio 2015\\Projects\\Twitter_Test\\Twitter_Test\\Assets\\Android\\Twitter_v5.106.0_apkpure.com.apk")
                     .EnableLocalScreenshots()
-                    .StartApp());
+                    .StartApp();
  
             }
         }

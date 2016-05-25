@@ -71,13 +71,13 @@ namespace Twitter_Test.FeatureFiles
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Incorrect Login", new string[] {
                         "loginScreen"});
-#line 4
+#line 3
 this.ScenarioSetup(scenarioInfo);
-#line 5
+#line 4
  testRunner.Given("I am on the login screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 6
+#line 5
  testRunner.When("I login with an incorrect username and password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 7
+#line 6
  testRunner.Then("an error message will come up", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -86,19 +86,17 @@ this.ScenarioSetup(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Login")]
         [NUnit.Framework.CategoryAttribute("loginScreen")]
-        [NUnit.Framework.CategoryAttribute("logout")]
         public virtual void Login()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login", new string[] {
-                        "loginScreen",
-                        "logout"});
-#line 10
+                        "loginScreen"});
+#line 9
 this.ScenarioSetup(scenarioInfo);
-#line 11
+#line 10
  testRunner.Given("I am on the login screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 12
+#line 11
  testRunner.When("I login with correctusername and password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 13
+#line 12
  testRunner.Then("I will be on the twitter homescreen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

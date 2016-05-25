@@ -13,21 +13,25 @@ namespace Twitter_Test
         // For additional details on SpecFlow hooks see http://go.specflow.org/doc-hooks
         public static ITasks task;
         static Platform platform;
-        IApp app;
+        LoginScreen login;
+        public static IApp app;
+
         [BeforeScenario("loginScreen")]
         public void BeforeScenario()
         {
-            task = AppInitializer.StartApp(platform);
-            task.tapLogin();
+            app = AppInitializer.StartApp(platform);
+            LoginScreen login = new LoginScreen(app);
+            login.Login();
+            
         }
 
         [BeforeScenario("login")]
         public void BeforeScenarioLogin()
         {
-            task = AppInitializer.StartApp(platform);
-            task.tapLogin();
-            task.login();
-            task.tapDontAllow();
+            //task = AppInitializer.StartApp(platform);
+            //task.tapLogin();
+            //task.login();
+            //task.tapDontAllow();
         }
 
         [AfterScenario("logout")]
@@ -39,11 +43,11 @@ namespace Twitter_Test
         [BeforeFeature("BeforeTweet")]
         public static void BeforeTweet()
         {
-            task = AppInitializer.StartApp(platform);
-            task.tapLogin();
+            //task = AppInitializer.StartApp(platform);
+            //task.tapLogin();
 
-            task.login();
-            task.tapDontAllow();
+            //task.login();
+            //task.tapDontAllow();
         }
 
         [AfterFeature("AfterTweet")]

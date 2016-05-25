@@ -20,8 +20,6 @@ namespace Twitter_Test.FeatureFiles
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("TweetText")]
-    [NUnit.Framework.CategoryAttribute("BeforeTweet")]
-    [NUnit.Framework.CategoryAttribute("AfterTweet")]
     public partial class TweetTextFeature
     {
         
@@ -35,9 +33,7 @@ namespace Twitter_Test.FeatureFiles
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "TweetText", "In order to announce things about my life\nI want to send a tweet\nSo I can feel am" +
-                    "azing", ProgrammingLanguage.CSharp, new string[] {
-                        "BeforeTweet",
-                        "AfterTweet"});
+                    "azing", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -71,9 +67,11 @@ namespace Twitter_Test.FeatureFiles
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Send First Tweet")]
+        [NUnit.Framework.CategoryAttribute("loginScreen")]
         public virtual void SendFirstTweet()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Send First Tweet", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Send First Tweet", new string[] {
+                        "loginScreen"});
 #line 7
 this.ScenarioSetup(scenarioInfo);
 #line 8
@@ -86,14 +84,16 @@ this.ScenarioSetup(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Send Second Tweet")]
+        [NUnit.Framework.IgnoreAttribute()]
         public virtual void SendSecondTweet()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Send Second Tweet", ((string[])(null)));
-#line 11
-this.ScenarioSetup(scenarioInfo);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Send Second Tweet", new string[] {
+                        "ignore"});
 #line 12
- testRunner.When("I send a the tweet \"Test Tweet from QA Works \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+this.ScenarioSetup(scenarioInfo);
 #line 13
+ testRunner.When("I send a the tweet \"Test Tweet from QA Works \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 14
  testRunner.Then("then I should see the tweet in my profile.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

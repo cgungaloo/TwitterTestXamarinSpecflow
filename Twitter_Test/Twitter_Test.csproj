@@ -65,6 +65,9 @@
   <ItemGroup>
     <Compile Include="AndroidTasks.cs" />
     <Compile Include="AndroidTasksExtended.cs" />
+    <Compile Include="AppFunctions\HasItem.cs" />
+    <Compile Include="AppFunctions\HasItem_Android.cs" />
+    <Compile Include="AppFunctions\HasItem_IOS.cs" />
     <Compile Include="BeforeAfterHook.cs" />
     <Compile Include="CredentialsManager.cs" />
     <Compile Include="FeatureFiles\Login.feature.cs">
@@ -90,7 +93,11 @@
     <Compile Include="IOSTasks.cs" />
     <Compile Include="IOSTasksExtended.cs" />
     <Compile Include="ITasks.cs" />
+    <Compile Include="platformReturn\getHasItem.cs" />
+    <Compile Include="Screens\HomeScreen.cs" />
+    <Compile Include="Screens\LoginScreen.cs" />
     <Compile Include="NumberManager.cs" />
+    <Compile Include="Screens\TweetScreen.cs" />
     <Compile Include="StepDefs\IncorrectLogin.cs" />
     <Compile Include="StepDefs\LoginSteps.cs" />
     <Compile Include="AppInitializer.cs" />
@@ -124,5 +131,6 @@
   <ItemGroup>
     <Content Include="NumCount.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
