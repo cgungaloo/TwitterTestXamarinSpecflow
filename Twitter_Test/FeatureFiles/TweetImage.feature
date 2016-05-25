@@ -1,9 +1,9 @@
-﻿@BeforeTweet @AfterTweet
+﻿@BeforeTweet @AfterTweet @ignore
 Feature: TweetImage
 	In order to give QAWorks an online presence on twitter
 	I want to tweet an image
 
-@mytag
+@mytag @ignore
 Scenario: Tweet Image
 	Given I have an image on my phone
 	When I tweet the image with text "Test image QAWorks "
